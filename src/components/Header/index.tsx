@@ -1,5 +1,5 @@
 import styles from './styles.module.css'
-import logoImg from '../assets/rocket.svg';
+import logoImg from '../../assets/rocket.svg';
 import { AiOutlinePlusCircle } from 'react-icons/ai'
 
 export function Header(){
