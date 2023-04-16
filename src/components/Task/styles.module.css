@@ -1,6 +1,6 @@
 .taskContainer{
     width: 100%;
-    background: var(--gray-500);
+    background: var(--gray-600);
     border: 1px solid var(--gray-400);
     border-radius: 8px;
 
@@ -47,8 +47,19 @@ p.textCompleted{
 }
 
 .deleteButton{
-    background: none;
+    width: 2rem;
+    height: 2rem;
     border: none;
+    background: none;
+    border-radius: 8px;
     color: var(--gray-300);
     cursor: pointer;
+}
+
+.deleteButton:hover{
+    background: var(--gray-400);
+}
+
+.deleteButton svg:hover{
+    color: var(--danger);
 }

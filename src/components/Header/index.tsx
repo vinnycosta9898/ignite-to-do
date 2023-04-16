@@ -10,6 +10,7 @@ interface Props{
 
 export function Header({ onAddTask } : Props){
     const [title, setTitle] = useState("");
+    const isSubmitDisabled = !title;
     
     function handleCreateTask(event: FormEvent){
         event.preventDefault();
@@ -39,7 +40,7 @@ export function Header({ onAddTask } : Props){
                     required
                     onInvalid={handleTaskInvalid}
                 />
-                <button>
+                <button disabled={isSubmitDisabled}>
                     Criar
                     <AiOutlinePlusCircle size={20}/>
                 </button>
